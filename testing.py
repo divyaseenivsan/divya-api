@@ -26,8 +26,7 @@ def user_update(user_id:int,user:User):
     
     else:
         return {"message": "User not found"}
-    
-    
+   
 @app.delete("/user_db/data/v1/delete/{user_id}")    
 def delete_user(user_id:int):
     if user_id in user_db:
